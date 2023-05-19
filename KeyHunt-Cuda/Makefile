@@ -32,9 +32,9 @@ OBJET = $(addprefix $(OBJDIR)/, \
 endif
 
 CXX        = g++
-CUDA       = /usr/local/cuda-12.0
+CUDA       = /usr/local/cuda-11.4
 CXXCUDA    = /usr/bin/g++
-NVCC       = $(CUDA)/bin/nvcc
+NVCC       = /usr/bin/nvcc
 # nvcc requires joint notation w/o dot, i.e. "5.2" -> "52"
 ccap       = $(shell echo $(CCAP) | tr -d '.')
 
